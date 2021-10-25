@@ -1,0 +1,5 @@
+<ng-container *ngFor="let post of allposts">
+    <app-show-post [thepost]="post"></app-show-post>
+</ng-container>
+<h1>New Post</h1>
+<app-post-form (addPost)="onSubmit($event)"></app-post-form>
